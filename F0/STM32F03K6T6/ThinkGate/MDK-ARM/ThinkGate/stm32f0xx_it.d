@@ -21,6 +21,8 @@ thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h
+thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h
+thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc_ex.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h
@@ -30,3 +32,9 @@ thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h
 thinkgate\stm32f0xx_it.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
 thinkgate\stm32f0xx_it.o: ../Inc/stm32f0xx_it.h
+thinkgate\stm32f0xx_it.o: ..\User\think_gate.h
+thinkgate\stm32f0xx_it.o: ..\User\flash_program.h
+thinkgate\stm32f0xx_it.o: ..\User\verfint.h
+thinkgate\stm32f0xx_it.o: ..\User\sys.h
+thinkgate\stm32f0xx_it.o: ..\User\Serial.h
+thinkgate\stm32f0xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

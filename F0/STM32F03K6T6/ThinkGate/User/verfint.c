@@ -18,7 +18,7 @@ extern ADC_HandleTypeDef hadc;
 *  No         Version         Date        RevisedBy        Item         Description  
 *  1          V1.0            2017/07/24  Twsa Liu         None           None
 **************************************************************************************/
-void ADCVoltage(void)
+uint16_t ADCVoltage(void)
 {
 	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_SET);
 	
@@ -33,6 +33,8 @@ void ADCVoltage(void)
 //                using function HAL_ADC_Stop()
 	int index=0;
 	uint32_t testBuf=0;
+	uint32_t testSum=0;
+	uint16_t Voltage=0;
 	
 	//开始利用ADC转换数据
   HAL_ADC_Start(&hadc);
@@ -41,7 +43,11 @@ void ADCVoltage(void)
 	{
 //		 HAL_ADC_Start_DMA(&hadc,testBuf,10);
 		 testBuf=HAL_ADC_GetValue(&hadc);
-     printf("%d\r\n",2*testBuf);
+		 testSum+=(testBuf*2);
+//     printf("%d\r\n",2*testBuf);
 	}
 	HAL_ADC_Stop(&hadc);
+	Voltage=(uint16_t)(testSum/10);
+	
+	return Voltage;
 }

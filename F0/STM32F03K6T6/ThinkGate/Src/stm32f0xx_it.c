@@ -36,7 +36,7 @@
 #include "stm32f0xx_it.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "think_gate.h"
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -126,18 +126,27 @@ void SysTick_Handler(void)
 /**
 * @brief This function handles USART1 global interrupt.
 */
+#include "string.h"
+extern uint8_t getCommandBuf[COMMAND_LENGTH];
+uint8_t receiveIndex=0;
+
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-
+	uint8_t receiveData=0;
+	 while ((USART1->ISR & 0x0020)!=0x0020); 
+	 receiveData=USART1->RDR;
+   getCommandBuf[receiveIndex++]=receiveData;
+	
   /* USER CODE END USART1_IRQn 0 */
-  HAL_UART_IRQHandler(&huart1);
+	
+//  HAL_UART_IRQHandler(&huart1);
+
   /* USER CODE BEGIN USART1_IRQn 1 */
 
   /* USER CODE END USART1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
-
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

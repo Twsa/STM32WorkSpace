@@ -1,10 +1,11 @@
 #include "flash_program.h"
+#include <stdlib.h>  /* malloc, free, rand, system */
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 //#define FLASH_PAGE_SIZE         ((uint32_t)0x00000400)   /* FLASH Page Size */
 #define FLASH_USER_START_ADDR   ((uint32_t)0x08007C00)   /* Start @ of user Flash area */
-#define DATA_TO_PROG            ((uint32_t)0xAABBCCDD)   /* 32-bits value to be programmed */
+//#define DATA_TO_PROG            ((uint32_t)0xAABBCCDD)   /* 32-bits value to be programmed */
 
 /* Error codes used to make the orange led blinking */
 #define ERROR_ERASE 0x01
@@ -19,7 +20,6 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 volatile uint16_t error = 0;             //initialized at 0 and modified by the functions 
-uint32_t test_to_be_performed_twice = 1; //this variable is set to 2 if the first address of the page to erase is yet erased
 
 /* Private function prototypes -----------------------------------------------*/
 //void  ConfigureGPIO(void);
@@ -31,7 +31,7 @@ extern void    FLASH_PageErase(uint32_t PageAddress);
 *  Author/Corporation               :    Twsa Liu
 *  Description                      :    对FLASH进行编程
                                         
-*  Param                            :    addr;data
+*  Param                            :    addr;data;len
 *  Return Code                      :    None
 																			
 *  Global Variable                  :    
@@ -42,32 +42,91 @@ extern void    FLASH_PageErase(uint32_t PageAddress);
 *  No         Version         Date        RevisedBy        Item         Description  
 *  1          V1.0            2017/07/24  Twsa Liu         None           None
 **************************************************************************************/
-void FlashWrite(void)
+void FlashWrite(uint32_t addr,uint8_t *data,uint32_t len)
 {
-	uint32_t testBuf=0;
+	uint32_t test_to_be_performed_len = 0; //this variable is set to len if the first address of the page to erase is yet erased
+	uint32_t i=0;
+	uint16_t testBuf16=0;
 	
   FlashOperationPreparation();
+	FlashErase(FLASH_USER_START_ADDR);
+	CheckFlashErase(FLASH_USER_START_ADDR);
   /* Check if the first address of the page is yet erased,this is only for this example */
   if (*(uint32_t *)(FLASH_USER_START_ADDR) == (uint32_t)0xFFFFFFFF) 
-  {
-    test_to_be_performed_twice = 2;
+  {    	
+		test_to_be_performed_len =(len-1)/2;
+		if((len-1)%2!=0)
+		{
+			test_to_be_performed_len+=1;       
+		}
   }
   
-  while (test_to_be_performed_twice-- > 0)
-  {
-    FlashErase(FLASH_USER_START_ADDR);
-    CheckFlashErase(FLASH_USER_START_ADDR);
-    FlashWord16Prog(FLASH_USER_START_ADDR, (uint16_t)DATA_TO_PROG);
-    FlashWord16Prog(FLASH_USER_START_ADDR + 2, (uint16_t)(DATA_TO_PROG >> 16));
-    
-    /* Check the programming of the address */
-    if  ((*(uint32_t *)(FLASH_USER_START_ADDR)) != DATA_TO_PROG)
-    {
-      error |= ERROR_PROG;
-    }
-  }
-	testBuf=(uint32_t) * (uint32_t *)FLASH_USER_START_ADDR;
-	printf("testBuf:%x\r\n",testBuf);
+	while(*(uint32_t *)(FLASH_USER_START_ADDR) == (uint32_t)0xFFFFFFFF)
+	{
+		FlashErase(FLASH_USER_START_ADDR);
+		CheckFlashErase(FLASH_USER_START_ADDR);
+		while (i<test_to_be_performed_len)
+		{
+			testBuf16=*(data+i*2); 
+			testBuf16 +=*(data+i*2+1)<<8;
+			
+		 
+			FlashWord16Prog(FLASH_USER_START_ADDR+i*2, testBuf16) ;
+	//    FlashWord16Prog(FLASH_USER_START_ADDR + 2, (uint16_t)(DATA_TO_PROG >> 16));
+			
+			/* Check the programming of the address */
+	//    if  ((*(uint32_t *)(FLASH_USER_START_ADDR)) != DATA_TO_PROG)
+	//    {
+	//      error |= ERROR_PROG;
+	//    }
+			i++;
+		}
+		 if (*(uint32_t *)(FLASH_USER_START_ADDR) == (uint32_t)0xFFFFFFFF) 
+			 i=0;
+ }
+//	testBuf=(uint32_t) * (uint32_t *)FLASH_USER_START_ADDR;
+  
+}
+
+/*************************************************************************************
+*  Function Name                    :    FlashWrite
+*  Create Date                      :    2017/07/24
+*  Author/Corporation               :    Twsa Liu
+*  Description                      :    读FLASH
+                                        
+*  Param                            :    addr;len
+*  Return Code                      :    None
+																			
+*  Global Variable                  :    
+*  File Static Variable             :    None
+*  Function Static Variable         :    None
+																			 
+*--------------------------------Revision History--------------------------------------
+*  No         Version         Date        RevisedBy        Item         Description  
+*  1          V1.0            2017/07/24  Twsa Liu         None           None
+**************************************************************************************/
+void FlashRead(uint32_t addr,const uint32_t len)
+{
+  uint8_t *testBuf=(uint8_t *) malloc(len);
+		
+	testBuf[len-1]='\0';
+  uint32_t j=0;
+	
+
+	for(j=0;j<len-1;j++)
+	{
+		testBuf[j]=(uint8_t) * (uint8_t *)(addr+j);
+		printf("%c",testBuf[j]);
+	}
+	printf("\r\n");
+//	for(j=0;j<len-1;j++)
+//	{
+//		testBuf[j]=(uint8_t) * (uint8_t *)(addr+j);
+//		printf("%x",testBuf[j]);
+//	}
+//  printf("\r\n");
+
+	free(testBuf);
 }
 
 /**

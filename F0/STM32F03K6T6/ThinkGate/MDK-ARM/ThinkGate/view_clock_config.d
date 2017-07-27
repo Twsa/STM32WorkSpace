@@ -22,6 +22,8 @@ thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h
+thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h
+thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc_ex.h
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h
 thinkgate\view_clock_config.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h

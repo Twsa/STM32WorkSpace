@@ -5,13 +5,16 @@
 #include "stm32f0xx.h"
 #include "Serial.h"
 
+#define SUCCESS 0x01
+#define FAULT   0x02
+
 //需要线程开发的需要开此项
 #ifdef __THEAD_MANAHE_H_
   #include "thread_manage.h"
 #endif
 
+uint16_t Lock_GetVersion(void);
 
-uint32_t BSP_GetVersion(void);
  void Error_Handler(void);
  void SystemCoreClockConfigure(void);
 void SystemClock_Config(void);
@@ -22,5 +25,9 @@ void GPIO_Config(void);
 void View_GPIO(void);
 void DelayMs (uint32_t dlyTicks);
 //void DMA_Config(void);
+
+/*----------------------------------*/
+void ReceiveTest(void);
+
 #endif
 
