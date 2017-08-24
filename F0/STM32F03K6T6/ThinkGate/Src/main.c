@@ -95,7 +95,6 @@ int main(void)
 	//∑¢ÀÕ ˝æ›≤‚ ‘
 //  uint8_t testBuf[7]="abcdefg";
 
-
 	//	  ADCVoltage();
 	SaveKey(KEY_ADDRESS,InitializationKey,sizeof(InitializationKey),CommunicationKey,sizeof(CommunicationKey));
 	//FlashRead(KEY_ADDRESS,17);

@@ -99,20 +99,34 @@ keyGet GetKey(const uint32_t keyAddressForKey,const uint32_t initializationKeyLe
 
 void MotorControl(void)
 {
-//	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
-//	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);   //·äÃùÆ÷
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
+
 	
 	HAL_Delay(500);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
 	
+	/***/
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);   //·äÃùÆ÷ÏìÉù1
+	HAL_Delay(100);
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);
+	HAL_Delay(100);
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);   //·äÃùÆ÷ÏìÉù2
+	HAL_Delay(100);
 	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);
 //  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
 //	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
+
 	
-//  HAL_Delay(1000);
+  HAL_Delay(2000);
 //	
-//	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+	HAL_Delay(500);
+	
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
 }
 
 /*************************************************************************************

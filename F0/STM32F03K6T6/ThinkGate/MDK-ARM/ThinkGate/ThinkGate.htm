@@ -3,7 +3,7 @@
 <title>Static Call Graph - [ThinkGate\ThinkGate.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ThinkGate\ThinkGate.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Thu Jul 27 19:10:02 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Fri Aug 11 12:43:36 2017
 <BR><P>
 <H3>Maximum Stack Usage =        460 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -394,6 +394,7 @@ Global Symbols
 <P><STRONG><a name="[2a]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorControl
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCVoltage
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
@@ -571,8 +572,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendFacilityInfo
 </UL>
 
-<P><STRONG><a name="[61]"></a>MotorControl</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, think_gate.o(i.MotorControl))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = MotorControl &rArr; HAL_Delay
+<P><STRONG><a name="[61]"></a>MotorControl</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, think_gate.o(i.MotorControl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MotorControl &rArr; HAL_Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -722,12 +723,13 @@ Global Symbols
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKey
 </UL>
 
-<P><STRONG><a name="[1a]"></a>main</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, main.o(i.main))
+<P><STRONG><a name="[1a]"></a>main</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 460<LI>Call Chain = main &rArr; MsgHandle &rArr; SendFacilityInfo &rArr; Arc4Crypt &rArr; arc4_setup
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveKey
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MsgHandle
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKey

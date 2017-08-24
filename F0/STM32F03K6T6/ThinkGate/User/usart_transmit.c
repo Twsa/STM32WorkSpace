@@ -62,10 +62,10 @@ void ReceiveTest(void)
 }
 
 /*************************************************************************************
-*  Function Name                    :    LockReceiveCommand
+*  Function Name                    :    receiveBody
 *  Create Date                      :    2017/07/26
 *  Author/Corporation               :    Twsa Liu
-*  Description                      :    接受数据测试  测试成功
+*  Description                      :   
                                         
 *  Param                            :    
 *  Return Code                      :    None
