@@ -855,3 +855,28 @@ void CmdStrToData(CMD_BUF* cmdPtr)
 
 
 }
+
+void CmdStrToData_Simple(CMD_BUF* cmdPtr)
+{
+	uint16_t InfoLength;
+	InfoLength	= cmdPtr->DataPtr - 2; 
+	uint8_t InfoUsed[100]={0};
+	
+	if(InfoLength%2==0)//说明长度偶数，正确
+	{
+		memcpy (InfoUsed,&cmdPtr->Buf[1],InfoLength);      
+		
+//		Str2Hex(InfoUsed ,StrPlain,InfoLength);
+
+		cmdPtr->Buf[0] = Packet_Header;
+		Str2Hex(InfoUsed ,HexPlain,InfoLength);
+		memcpy(&cmdPtr->Buf[1],HexPlain,InfoLength);
+		cmdPtr->Buf[(InfoLength/2)+1] = Packet_End;
+		CmdCheckData(&CommCmdRxBuf);
+
+	}
+	else //有效长度为奇数，数据错误
+	{
+		
+	}
+}

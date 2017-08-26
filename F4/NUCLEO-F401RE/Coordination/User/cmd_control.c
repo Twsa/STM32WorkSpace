@@ -95,7 +95,7 @@ void CommCmdHandleNew()
 *  1          V1.0            2017/08/24  Twsa Liu         None           None
 *************************************************************************************/
 extern uint8_t  Packet_End_Flag;
-void CommCtrl()
+void CommCtrl(void)
 {
 	if(Packet_End_Flag)              //接受数据包尾提示
 	{
@@ -113,3 +113,37 @@ void CommCtrl()
 	CmdRxOvertimeCheck(&CommCmdRxBuf);
 }
 
+/*************************************************************************************
+*  Function Name                    :    CommCtrl_Simple
+*  Create Date                      :    2017/08/24
+*  Author/Corporation               :    Twsa Liu
+*  Description                      :    接受命令部分没有加密部分；含包头包尾以及校验位的检测
+                                        
+*  Param                            :    
+*  Return Code                      :    None
+																			
+*  Global Variable                  :    
+*  File Static Variable             :    None
+*  Function Static Variable         :    None
+																			 
+*--------------------------------Revision History--------------------------------------
+*  No         Version         Date        RevisedBy        Item         Description  
+*  1          V1.0            2017/08/24  Twsa Liu         None           None
+*************************************************************************************/
+void CommCtrl_Simple(void)
+{
+	if(Packet_End_Flag)              //接受数据包尾提示
+	{
+		Packet_End_Flag =0;
+		CmdStrToData_Simple(&CommCmdRxBuf);  //接受的数据转换
+	}
+//	CmdCheckData(&CommCmdRxBuf);
+	if(CommCmdRxBuf.CmdOk)
+	{
+		//CommCmdHandle();
+		CommCmdHandleNew();
+		CommCmdRxBuf.CmdOk = 0;
+		CommCmdRxBuf.DataPtr = 0;
+	}
+	CmdRxOvertimeCheck(&CommCmdRxBuf);
+}

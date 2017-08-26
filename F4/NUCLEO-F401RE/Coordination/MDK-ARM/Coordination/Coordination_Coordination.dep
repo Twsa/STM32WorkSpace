@@ -464,7 +464,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x598FA044
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x598FA045)
-F (../Src/main.c)(0x599ED39F)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\main.o --omf_browse coordination\main.crf --depend coordination\main.d)
+F (../Src/main.c)(0x59A0E2CB)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\main.o --omf_browse coordination\main.crf --depend coordination\main.d)
 I (../Inc/main.h)(0x599EC8AE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x598FA044)
 I (../Inc/stm32f4xx_hal_conf.h)(0x599EC8AE)
@@ -498,8 +498,8 @@ I (..\User\Serial.h)(0x592159EA)
 I (..\Json\json_test.h)(0x598FAF5D)
 I (C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board\Board_Buttons.h)(0x53BB2252)
 I (C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board\Board_LED.h)(0x53BB2252)
-I (..\Receive\receive_handle.h)(0x599ED653)
-I (..\User\cmd_control.h)(0x599E841A)
+I (..\Receive\receive_handle.h)(0x59A0E6B0)
+I (..\User\cmd_control.h)(0x59A0E3E3)
 F (../Src/stm32f4xx_it.c)(0x599ED06C)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\stm32f4xx_it.o --omf_browse coordination\stm32f4xx_it.crf --depend coordination\stm32f4xx_it.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x598FA044)
 I (../Inc/stm32f4xx_hal_conf.h)(0x599EC8AE)
@@ -530,10 +530,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x598FA045)
 I (../Inc/stm32f4xx_it.h)(0x599EC8AD)
-I (..\User\cmd_control.h)(0x599E841A)
+I (..\User\cmd_control.h)(0x59A0E3E3)
 I (..\User\sys.h)(0x598FA2D3)
 I (..\User\Serial.h)(0x592159EA)
-I (..\Receive\receive_handle.h)(0x599ED653)
+I (..\Receive\receive_handle.h)(0x59A0E6B0)
 F (../Src/stm32f4xx_hal_msp.c)(0x599EC8AD)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\stm32f4xx_hal_msp.o --omf_browse coordination\stm32f4xx_hal_msp.crf --depend coordination\stm32f4xx_hal_msp.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x598FA044)
 I (../Inc/stm32f4xx_hal_conf.h)(0x599EC8AE)
@@ -661,7 +661,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x598FA045)
 I (..\User\Serial.h)(0x592159EA)
-F (..\User\cmd_control.c)(0x599ED702)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\cmd_control.o --omf_browse coordination\cmd_control.crf --depend coordination\cmd_control.d)
+F (..\User\cmd_control.c)(0x59A0E762)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\cmd_control.o --omf_browse coordination\cmd_control.crf --depend coordination\cmd_control.d)
 I (..\User\sys.h)(0x598FA2D3)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x598FA02F)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h)(0x598FA02F)
@@ -692,8 +692,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x598FA045)
 I (..\User\Serial.h)(0x592159EA)
-I (..\User\cmd_control.h)(0x599E841A)
-I (..\Receive\receive_handle.h)(0x599ED653)
+I (..\User\cmd_control.h)(0x59A0E3E3)
+I (..\Receive\receive_handle.h)(0x59A0E6B0)
 F (..\User\str_hex.c)(0x59891A23)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\str_hex.o --omf_browse coordination\str_hex.crf --depend coordination\str_hex.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\User\str_hex.h)(0x599E8839)
@@ -806,7 +806,7 @@ I (..\Json\json_test.h)(0x598FAF5D)
 I (..\Json\cJSON.h)(0x5868C99E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-F (..\Receive\receive_handle.c)(0x599ED10A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\receive_handle.o --omf_browse coordination\receive_handle.crf --depend coordination\receive_handle.d)
+F (..\Receive\receive_handle.c)(0x59A0ED7D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\receive_handle.o --omf_browse coordination\receive_handle.crf --depend coordination\receive_handle.d)
 I (..\User\sys.h)(0x598FA2D3)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x598FA02F)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h)(0x598FA02F)
@@ -837,10 +837,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x598FA044)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x598FA045)
 I (..\User\Serial.h)(0x592159EA)
-I (..\Receive\receive_handle.h)(0x599ED653)
+I (..\Receive\receive_handle.h)(0x59A0E6B0)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\User\str_hex.h)(0x599E8839)
-I (..\User\cmd_control.h)(0x599E841A)
+I (..\User\cmd_control.h)(0x59A0E3E3)
 I (..\RC4\arc4.h)(0x599E8A12)
 F (C:\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Boards\ST\NUCLEO-F401RE\Common\Buttons_NUCLEO_F401RE.c)(0x558A5FC6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99-o coordination\buttons_nucleo_f401re.o --omf_browse coordination\buttons_nucleo_f401re.crf --depend coordination\buttons_nucleo_f401re.d)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x598FA02F)

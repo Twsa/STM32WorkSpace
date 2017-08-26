@@ -56,4 +56,5 @@ void CmdStrToData(CMD_BUF* cmdPtr);
 void CmdResetOverTime(CMD_BUF* cmdPtr);
 void CmdRxOvertimeCheck(CMD_BUF* cmdPtr);
 void CmdCheckData(CMD_BUF* cmdPtr);
+void CmdStrToData_Simple(CMD_BUF* cmdPtr);
 #endif

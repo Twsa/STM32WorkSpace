@@ -118,7 +118,8 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-		CommCtrl();                                 //处理接受的命令
+//		CommCtrl();                                 //处理接受的命令
+		CommCtrl_Simple();
   /* USER CODE BEGIN 3 */
 
   }

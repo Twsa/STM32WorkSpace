@@ -13,6 +13,6 @@
 
 void CommCtrlInit(void);
 void CommCtrl(void);
-
+void CommCtrl_Simple(void);
 
 #endif
