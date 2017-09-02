@@ -1,0 +1,7 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User -I ..\Json -I ..\Receive -I ..\Transmit -I ..\RC4 --C99
+-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\Coordination\MDK-ARM\RTE
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99
+-o coordination\transmit_handle.o --omf_browse coordination\transmit_handle.crf --depend coordination\transmit_handle.d "..\Transmit\transmit_handle.c"

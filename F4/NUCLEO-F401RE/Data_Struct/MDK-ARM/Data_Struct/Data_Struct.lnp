@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"data_struct\startup_stm32f401xe.o"
+"data_struct\stm32f4xx_hal_tim_ex.o"
+"data_struct\stm32f4xx_hal_flash.o"
+"data_struct\stm32f4xx_hal_cortex.o"
+"data_struct\stm32f4xx_hal.o"
+"data_struct\stm32f4xx_hal_rcc_ex.o"
+"data_struct\stm32f4xx_hal_gpio.o"
+"data_struct\stm32f4xx_hal_dma_ex.o"
+"data_struct\stm32f4xx_hal_rcc.o"
+"data_struct\stm32f4xx_hal_pwr.o"
+"data_struct\stm32f4xx_hal_tim.o"
+"data_struct\stm32f4xx_hal_dma.o"
+"data_struct\stm32f4xx_hal_flash_ramfunc.o"
+"data_struct\stm32f4xx_hal_uart.o"
+"data_struct\stm32f4xx_hal_flash_ex.o"
+"data_struct\stm32f4xx_hal_pwr_ex.o"
+"data_struct\stm32f4xx_it.o"
+"data_struct\main.o"
+"data_struct\stm32f4xx_hal_msp.o"
+"data_struct\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Data_Struct\Data_Struct.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Data_Struct.map" -o Data_Struct\Data_Struct.axf

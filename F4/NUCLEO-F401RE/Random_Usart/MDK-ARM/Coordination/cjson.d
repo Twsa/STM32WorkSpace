@@ -1,0 +1,10 @@
+coordination\cjson.o: ..\Json\cJSON.c
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+coordination\cjson.o: ..\Json\cJSON.h
+coordination\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

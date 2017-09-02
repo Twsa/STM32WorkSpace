@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --C99
+-ID:\GitHub\STM32WorkSpace\F4\NUCLEO-F401RE\InterruptStopMode\MDK-ARM\RTE
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401xE --C99
+-o interruptstopmode\power_control.o --omf_browse interruptstopmode\power_control.crf --depend interruptstopmode\power_control.d "..\User\power_control.c"
