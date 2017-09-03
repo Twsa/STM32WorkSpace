@@ -335,7 +335,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F401xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\User;..\DataStruct;..\Receive;..\RC4</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -493,6 +493,66 @@
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/system_stm32f4xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>retarget_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\retarget_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>Serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Serial.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>str_hex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\str_hex.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DataStruct</GroupName>
+          <Files>
+            <File>
+              <FileName>linear_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DataStruct\linear_list.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Receive</GroupName>
+          <Files>
+            <File>
+              <FileName>receive_handle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Receive\receive_handle.c</FilePath>
+            </File>
+            <File>
+              <FileName>cmd_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\cmd_control.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RC4</GroupName>
+          <Files>
+            <File>
+              <FileName>arc4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RC4\arc4.c</FilePath>
             </File>
           </Files>
         </Group>

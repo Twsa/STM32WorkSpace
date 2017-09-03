@@ -40,11 +40,18 @@
 #include "stm32f4xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "sys.h"
+#include "data_struct.h"
+#include "receive_handle.h"
+#include "cmd_control.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
+SqList L1,L2,L3;
+
+/* Extern variables ---------------------------------------------------------*/
+extern SqList List;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -93,15 +100,26 @@ int main(void)
   MX_USART2_UART_Init();
 
   /* USER CODE BEGIN 2 */
-
+	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);    //打开USART2中断时钟
+  printf("\
+		 \r\n----------------------------------------\
+	   \r\n* This is a project to learn           *\
+		 \r\n* data_struct  of stm32f401            *\
+		 \r\n----------------------------------------\
+		 \r\n\
+		    ");
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	CommCtrlInit();  
+	InitList_Sq(&L1);
+	InitList_Sq(&L2);
+	
   while (1)
   {
   /* USER CODE END WHILE */
-
+  DataReceiveSyntaxHandle(0x02);
   /* USER CODE BEGIN 3 */
 
   }

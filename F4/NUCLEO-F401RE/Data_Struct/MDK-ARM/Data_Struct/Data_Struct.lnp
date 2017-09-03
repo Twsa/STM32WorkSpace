@@ -19,6 +19,14 @@
 "data_struct\main.o"
 "data_struct\stm32f4xx_hal_msp.o"
 "data_struct\system_stm32f4xx.o"
+"data_struct\retarget_usart.o"
+"data_struct\serial.o"
+"data_struct\sys.o"
+"data_struct\str_hex.o"
+"data_struct\linear_list.o"
+"data_struct\receive_handle.o"
+"data_struct\cmd_control.o"
+"data_struct\arc4.o"
 --library_type=microlib --strict --scatter "Data_Struct\Data_Struct.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

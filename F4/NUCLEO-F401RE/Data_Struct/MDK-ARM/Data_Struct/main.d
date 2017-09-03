@@ -28,3 +28,8 @@ data_struct\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramf
 data_struct\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 data_struct\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 data_struct\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+data_struct\main.o: ..\User\sys.h
+data_struct\main.o: ..\User\Serial.h
+data_struct\main.o: ..\DataStruct\data_struct.h
+data_struct\main.o: ..\Receive\receive_handle.h
+data_struct\main.o: ..\User\cmd_control.h
