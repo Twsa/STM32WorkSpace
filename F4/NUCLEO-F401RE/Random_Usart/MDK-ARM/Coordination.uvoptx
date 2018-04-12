@@ -78,68 +78,6 @@
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
       <CpuCode>18</CpuCode>
-      <Books>
-        <Book>
-          <Number>0</Number>
-          <Title>STM32F401C-Discovery Quick Start Guide (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\32F401C-DISCOVERY_QSG.pdf</Path>
-        </Book>
-        <Book>
-          <Number>1</Number>
-          <Title>Getting Started (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\DM00092826.pdf</Path>
-        </Book>
-        <Book>
-          <Number>2</Number>
-          <Title>User Manual (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\DM00093902.pdf</Path>
-        </Book>
-        <Book>
-          <Number>3</Number>
-          <Title>Bill of Materials (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\stm32f401c-disco_bom.zip</Path>
-        </Book>
-        <Book>
-          <Number>4</Number>
-          <Title>Gerber Files (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\stm32f401c-disco_gerber.zip</Path>
-        </Book>
-        <Book>
-          <Number>5</Number>
-          <Title>Schematics (STM32F401C-Discovery)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\MDK\Boards\ST\STM32F401C-Discovery\Documentation\stm32f401c-disco_sch.zip</Path>
-        </Book>
-        <Book>
-          <Number>6</Number>
-          <Title>User Manual (NUCLEO-F401RE)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105823.pdf</Path>
-        </Book>
-        <Book>
-          <Number>7</Number>
-          <Title>Overview (NUCLEO-F401RE)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105918.pdf</Path>
-        </Book>
-        <Book>
-          <Number>8</Number>
-          <Title>Getting started (NUCLEO-F401RE)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105928.pdf</Path>
-        </Book>
-        <Book>
-          <Number>9</Number>
-          <Title>Schematics (NUCLEO-F401RE)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\MB1136.pdf</Path>
-        </Book>
-        <Book>
-          <Number>10</Number>
-          <Title>STM32F401C-Discovery Web Page (STM32F401C-Discovery)</Title>
-          <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF259098</Path>
-        </Book>
-        <Book>
-          <Number>11</Number>
-          <Title>STM32 Nucleo board (NUCLEO-F401RE)</Title>
-          <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF260000</Path>
-        </Book>
-      </Books>
       <DebugOpt>
         <uSim>0</uSim>
         <uTrg>1</uTrg>
@@ -162,6 +100,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
+        <bEvRecOn>1</bEvRecOn>
         <nTsel>5</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
@@ -179,7 +118,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DBGCM</Key>
-          <Name>-U0669FF535550755187055431 -O2254 -S0 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO19 -TC1000000 -TP21 -TDS8000 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F401RE$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
+          <Name>-U0669FF535550755187055431 -O2254 -S0 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO19 -TC1000000 -TP21 -TDS8000 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F401RETx$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -209,28 +148,12 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
-          <Name>-U0669FF535550755187055431 -O2254 -S0 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO19 -TC1000000 -TP21 -TDS8000 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F401RE$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
+          <Name>-U0669FF535550755187055431 -O2254 -SF4000 -C0 -A0 -I0 -HNlocalhost -HP7184 -P2 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO19 -TC1000000 -TP21 -TDS8000 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F401RETx$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint>
         <Bp>
           <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>179</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134219268</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\cmd_control.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Coordination\../User/cmd_control.c\179</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
           <Type>0</Type>
           <LineNumber>884</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -333,15 +256,16 @@
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
-      <Lin2Executable></Lin2Executable>
-      <Lin2ConfigFile></Lin2ConfigFile>
-      <bLin2Auto>0</bLin2Auto>
-      <SystemViewers>
-        <Entry>
-          <Name>OS Support\Event Viewer</Name>
-          <WinId>35904</WinId>
-        </Entry>
-      </SystemViewers>
+      <bAutoGenD>0</bAutoGenD>
+      <LntExFlags>0</LntExFlags>
+      <pMisraName></pMisraName>
+      <pszMrule></pszMrule>
+      <pSingCmds></pSingCmds>
+      <pMultCmds></pMultCmds>
+      <pMisraNamep></pMisraNamep>
+      <pszMrulep></pszMrulep>
+      <pSingCmdsp></pSingCmdsp>
+      <pMultCmdsp></pMultCmdsp>
       <DebugDescription>
         <Enable>1</Enable>
         <EnableLog>0</EnableLog>

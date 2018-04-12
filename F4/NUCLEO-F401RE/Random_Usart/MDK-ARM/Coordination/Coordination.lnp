@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp
 "coordination\stm32f4xx_hal_flash.o"
 "coordination\stm32f4xx_hal_gpio.o"
 "coordination\stm32f4xx_hal_dma.o"
@@ -32,6 +32,6 @@
 "coordination\buttons_nucleo_f401re.o"
 "coordination\led_nucleo_f401re.o"
 --library_type=microlib --strict --scatter "Coordination\Coordination.sct"
---diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "Coordination.map" -o Coordination\Coordination.axf

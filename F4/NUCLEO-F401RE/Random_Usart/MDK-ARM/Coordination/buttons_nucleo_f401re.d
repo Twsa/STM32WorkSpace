@@ -28,4 +28,4 @@ coordination\buttons_nucleo_f401re.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f
 coordination\buttons_nucleo_f401re.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 coordination\buttons_nucleo_f401re.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 coordination\buttons_nucleo_f401re.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-coordination\buttons_nucleo_f401re.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board\Board_Buttons.h
+coordination\buttons_nucleo_f401re.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.4.1\Board\Board_Buttons.h

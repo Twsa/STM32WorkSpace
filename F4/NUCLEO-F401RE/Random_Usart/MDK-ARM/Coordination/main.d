@@ -31,7 +31,7 @@ coordination\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 coordination\main.o: ..\User\sys.h
 coordination\main.o: ..\User\Serial.h
 coordination\main.o: ..\Json\json_test.h
-coordination\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board\Board_Buttons.h
-coordination\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.2.0\Board\Board_LED.h
+coordination\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.4.1\Board\Board_Buttons.h
+coordination\main.o: C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.4.1\Board\Board_LED.h
 coordination\main.o: ..\Receive\receive_handle.h
 coordination\main.o: ..\User\cmd_control.h

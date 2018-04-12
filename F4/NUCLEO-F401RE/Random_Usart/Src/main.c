@@ -113,7 +113,7 @@ int main(void)
 //	ReceiveStr();
 
   /* USER CODE END 2 */
-
+	
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -121,7 +121,7 @@ int main(void)
   /* USER CODE END WHILE */
   /* USER CODE BEGIN 3 */
 		
-		DataReceiveSyntaxHandle(0x04);
+		DataReceiveSyntaxHandle(0x02);
 
   }
   /* USER CODE END 3 */

@@ -73,10 +73,17 @@ void CommCtrlInit()
 *--------------------------------Revision History--------------------------------------
 *  No         Version         Date        RevisedBy        Item         Description  
 *  1          V1.0            2017/08/24  Twsa Liu         None           None
-*************************************************************************************/
+*************************************************************************************/ 
+extern UART_HandleTypeDef huart2;
 void CommCmdHandleNew()
 {
-	;
+	uint8_t *test="Hello World";
+	uint8_t flagCom=0x01;
+	flagCom=StrCompare(test,&CommCmdRxBuf.Buf[1],11);
+	if(flagCom==0)
+		printf("Good Boy!\r\n");
+//		HAL_UART_Transmit(&huart2,&CommCmdRxBuf.Buf[1],12,100);
+	
 }
 /*************************************************************************************
 *  Function Name                    :  
@@ -232,4 +239,5 @@ void DataReceiveSyntaxHandle(const uint8_t modeSelected)
 		case 0x04:CommCtrl_RandomSyntax_Simple();break; 			 //接受的数据格式不带包头包尾，不带RC4加密
 		default:break;
 	}
+	CommCmdHandleNew();
 }

@@ -554,8 +554,8 @@ void CmdCheckData(CMD_BUF* cmdPtr)
 *  Function Name                    :    
 *  Create Date                      :    2017/08/24
 *  Author/Corporation               :    Twsa Liu
-*  Description                      :    
-                                        
+*  Description                      :   	
+                             
 *  Param                            :    cmdPtr:命令结构体的指针；
 *  Return Code                      :    
 																			

@@ -10,12 +10,13 @@
       <TargetName>Coordination</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060300::V5.06 update 3 (build 300)::ARMCC</pCCUsed>
+      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F401RETx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.11.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000-0x20017FFF) IROM(0x8000000-0x807FFFF) CLOCK(25000000) FPU2 CPUTYPE("Cortex-M4")</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -515,11 +516,6 @@
               <FilePath>..\User\sys.c</FilePath>
             </File>
             <File>
-              <FileName>view_clock_config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\view_clock_config.c</FilePath>
-            </File>
-            <File>
               <FileName>cmd_control.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\cmd_control.c</FilePath>
@@ -533,21 +529,6 @@
               <FileName>arc4.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\RC4\arc4.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Json</GroupName>
-          <Files>
-            <File>
-              <FileName>cJSON.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Json\cJSON.c</FilePath>
-            </File>
-            <File>
-              <FileName>json_test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Json\json_test.c</FilePath>
             </File>
           </Files>
         </Group>
